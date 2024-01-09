@@ -113,8 +113,8 @@
     width: 16px;
     height: 13px;
     position: absolute;
-    margin-inline-start: -20px;
-    margin-block-end: 2px;
+    left: -18px;
+    bottom: 2px;
     animation: play alternate 0.5s ease-in-out infinite;
   }
 
@@ -136,6 +136,8 @@
   position: relative;
   font-size: 0;
   overflow: hidden;
+  border-block-end: 2px solid var(--themes-main-color);
+  border-block-start: 2px solid var(--themes-main-color);
 }
 
 .content__title {
@@ -153,8 +155,6 @@
   object-fit: cover;
   object-position: center;
   display: block;
-  border-block-end: 2px solid var(--themes-main-color);
-  border-block-start: 2px solid var(--themes-main-color);
 }
 
 .content__decor {
@@ -373,7 +373,6 @@ dialog::backdrop {
   }
 
   .content__decor {
-    top: 25px;
     right: 11px;
   }
 }
